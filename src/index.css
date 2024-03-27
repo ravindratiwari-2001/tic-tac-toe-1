@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,237 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fe9029;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.App{
+  margin:  6% 4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  background-color: #b41f1f;
+  border-radius: 50px;
+  width: 60%;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 40%;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #dd500e;
+  align-items: center;
+  font-size:larger;
+  font-weight: 900;
+  border-radius: 25px;
+  padding: 10px 40px;
+  width: 50%;
+  height: 12%;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd500e;
+  font-weight: 900;
+  border-radius: 20px;
+  color: #ffffff;
+  height: 8%;
+  width: 14%;
+}
+
+.body{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  height:80%;
+}
+
+/*For player stats box*/
+.player-1{
+  display: flex;
+  flex-direction: column;
+  background-color: #ec6408;
+  border-radius: 0 15% 15% 15%;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 25%;
+}
+.player-2{
+  display: flex;
+  flex-direction: column;
+  background-color: #ec6408;
+  border-radius: 15% 0 15% 15%;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 25%;
+}
+
+/*For name of Game*/
+.name-1{
+  color: #b41f1f;
+  font-family: "Open Sans";
+  font-size: 100px;
+  font-weight: 900;
+}
+.name-2, .name-3{
+  color: #fffefe;
+  font-family: "Open Sans";
+  font-size: 100px;
+  font-weight: 900;
+}
+.name-4{
+  color: #690000;
+  font-family: "Open Sans";
+  font-size: 100px;
+  font-weight: 900;
+}
+
+/*for Player stats*/
+.player, .score{
+  font-size: 20px;
+  font-weight: 900;
+  color: #000000;
+}
+.score-value{
+  font-size: 25px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  font-size: 1.2em;
+}
+
+.game_1 {
+  background-color: #d8aa89;
+  border-radius: 20px;
+  display: flex; /* Arrange elements horizontally */
+  flex-direction: row;
+  justify-content: center; /* Center elements horizontally */
+  margin: 0 auto; /* Center game board horizontally */
+}
+
+.board-row {
+  display: flex; /* Arrange squares in a row */
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.square {
+  width: 80px; /* Adjust square size as desired */
+  height: 80px;
+  font-size: 45px; /* Adjust font size for X and O */
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center; /* Center text within square */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background: #9e3900;
+  margin: 2px;
+  border: none;
+}
+
+button{
+  color: #ffffff;
+}
+
+.square:hover { /* Add hover effect */
+  background-color: #551f01; /* Slight background change on hover */
+}
+
+.game-board {
+  padding: 10px; /* Add some padding inside sections */
+}
+
+.game-info {
+  padding: 10px 5px; /* Add some padding inside sections */
+}
+
+.status {
+  font-weight: 700; /* Bold text for status */
+  margin-bottom: 8px; /* Add some space below status */
+}
+
+.game-info ol { /* Style the move history list */
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.game-info li {
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+.game-info button {
+  width: 100%;
+  background-color: #dd500e; /* Remove button background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.game-info button:hover { /* Add hover effect for buttons */
+  background-color: #963306;
+  text-decoration: underline; /* Underline button text on hover */
 }
