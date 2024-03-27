@@ -12,7 +12,19 @@ function Board({ xIsNext, squares, onPlay }) {
   let status;
   if (winner) {
     status = "Winner: " + winner;
-  } else {
+  } else if (
+    squares[0] &&
+    squares[1] &&
+    squares[2] &&
+    squares[3] &&
+    squares[4] &&
+    squares[5] &&
+    squares[6] &&
+    squares[7] &&
+    squares[8]
+  ) {
+    status = "Draw, Start a new game"
+  }else{
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
 

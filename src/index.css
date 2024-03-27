@@ -60,6 +60,7 @@ ul {
   width: 60%;
   align-items: center;
   padding: 15px 20px;
+  box-shadow: 0.3em 0.3em 3em rgb(200 0 0 / 60%);
 }
 
 .name{
